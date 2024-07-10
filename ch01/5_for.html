@@ -10,24 +10,82 @@
 
 <script>
     for (let i = 1; i <= 3; i++) {
-        alert("aaaaa")
+        //alert(i);
     }
 
-    for (let i = 1; i <= 3; i++) {
-        alert("aaaaa")
+    for (let i = 1; i <= 10; i++) {
+        //alert(i);
     }
 
-    for (let i = 1; i <= 3; i++) {
-        alert("aaaaa")
+    //1~10까지 합
+    //let sum = 0; 
+    for (let i = 1; i <= 10; i++) {
+        //sum += i;
+    }
+    //alert(sum);
+
+    //2단
+    let sum = 0;
+    for (let i = 2; i <= 2; i++) {
+        for (let j = 1; j <= 9; j++) {
+            sum = i * j;
+           //console.log(i + " * " + j + " = " + sum);
+        }
     }
 
-    for (let i = 1; i <= 3; i++) {
-        alert("aaaaa")
+    for (let i = 1; i <= 9; i++) {
+       // alert("2 * " + i + " = " + (2 * i));
     }
 
-    for (let i = 1; i <= 3; i++) {
-        alert("aaaaa") 
+    //2~9단 
+    for (let i = 2; i <= 9; i++) {
+        for (let j = 1; j <= 9; j++) { 
+            //console.log(i + " * " + j + " = " + (i*j));
+        }
+        //console.log("----------");
     }
+
+    //2단 짝수만  
+    for (let i = 2; i <= 2; i++) {
+        for (let j = 1; j <= 9; j++) {
+            if (j % 2 == 0) {
+                console.log(i + " * " + j + " = " + (i*j))
+            }
+        }  
+    }
+
+    console.log("----------");
+  
+    //2단 홀수만
+    for (let i = 2; i <= 2; i++) {
+        for (let j = 1; j <= 9; j++) {
+            if (j % 2 == 1) {
+                console.log(i + " * " + j + " = " + (i*j))
+            }
+        }
+    }
+     
+    // let stars = "";
+    // for (let i = 0; i < 5; i++) {
+    //     for (let j = 0; j <= i; j++) {
+    //         stars = stars + "*"; 
+    //     }
+    //     console.log(stars); 
+    // }
+     
+    let stars = "";
+    for (let i = 0; i < 5; i++) { 
+        for (let j = 1; j <= 1; j++) {
+            stars = stars  + "*";
+        }  
+        console.log(stars)
+    }
+
+    
+
+    //document.write('<br>'); 
+
+    
 </script>
     
 </body>
