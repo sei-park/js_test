@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    // 함수 정의
+    function abc () { 
+        //alert("function");
+    }
+
+    //abc(); // 함수 호출(사용)
+    
+    // 매개변수 = 파라미터 
+    // function abcd (num1, num2) {
+    //     //alert(num1 + num2);
+    // }
+    
+    // abcd(1,2);
+
+    function add(num1, num2) {
+        let result = num1 + num2;
+        return result; 
+    }
+
+    let result01 = add(20,10);
+    console.log(result01);
+
+    function minus (num1, num2) {
+        let result = num1 - num2; 
+        return result;    
+    }
+
+    let result02 = minus(20,10);
+    console.log(result02);
+
+    function multiplied (num1, num2) {
+        let result = num1 * num2; 
+        return result;   
+    }
+
+    let result03 = multiplied(20,10);
+    console.log(result03);
+
+    function divided(num1, num2) {
+        let result = num1 / num2; 
+        return result;    
+    }
+
+    let result04 = divided(20,10);
+    console.log(result04);
+    
+    ///////////////////////////////////////////
+    function plus(num1, num2) {
+        let plusResult = change(num1);
+        let result = num1 + num2;
+        return result;
+    }
+
+    let result05 = plus(20,10); 
+    console.log(result05);
+ 
+    function change(num) {
+        return num - 10;
+    }
+
+
+    
+</script>
+    
+</body>
+</html>
