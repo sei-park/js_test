@@ -75,7 +75,8 @@
         // }
 
         // console.log("----------");
-
+        
+        /////별 찍기/////
         let star01 = "";
         for (let i = 0; i < 5; i++) {
             for (let j = 1; j <= 1; j++) {
@@ -85,15 +86,15 @@
         }
 
         console.log("----------");
-
-        //(2*i)-1 : 홀수    
+    
+        // (2*i)-1 : 홀수    
         for (let i = 1; i <= 5; i++) {
             let star02 = "";
-            for (let j = 1; j <= (5 - i); j++) {
-                star02 = star02 + " ";
+            for (let j = 1; j <= (5 - i); j++) { // 공벡 만들기(공백이 1~4까지)
+                star02 = star02 + " "; // 공백을 변수에 넣어줌
             }
-            for (let k = 1; k <= (i * 2) - 1; k++) {
-                star02 = star02 + "*";
+            for (let k = 1; k <= (i * 2) - 1; k++) { // 별이 홀수로 찍히도록 함 
+                star02 = star02 + "*"; 
             }
             console.log(star02);
         }
@@ -138,6 +139,16 @@
             star3 = "";
             empty2 = "";
         }
+        
+        // 직사각형 별 찍기
+        let star05 = "";
+        for (let i = 0; i < 5; i++) {
+            for (let j = 0; j < 5; j++) {
+                star05 += "*";
+            }
+            star05 += '\n';
+        }
+        console.log(star05);
 
 
 
