@@ -1,91 +1,106 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
-<script>
-    // for (let i = 1; i <= 3; i++) {
-    //     // document.write(i)
-    // }
+    <script>
+        // for (let i = 1; i <= 3; i++) {
+        //     // document.write(i)
+        // }
 
-    // // 1~10까지의 합
-    // let sum = 0;
-    // for (let i = 1; i <= 10; i++) {
-    //     sum += i; 
-    // } 
-    // //console.log(sum);
-   
-    // // 2단
-    // for (let i = 2; i <= 9; i++) {
-    //     for (let j = 1; j <= 9; j++) {
-    //         //console.log(i + " * " + j + " = " + (i*j));
-    //     }
-    //     //console.log("----------");
-    // }
+        // // 1~10까지의 합
+        // let sum = 0;
+        // for (let i = 1; i <= 10; i++) {
+        //     sum += i; 
+        // } 
+        // //console.log(sum);
 
-    // // 2단 짝수만
-    // for (let i = 1; i <= 9; i++) {
-    //     if (i % 2 == 0) {
-    //         //console.log(" 2 " + " * " + i + " = " + (2*i));
-    //     }
-    // } 
+        // // 2단
+        // for (let i = 2; i <= 9; i++) {
+        //     for (let j = 1; j <= 9; j++) {
+        //         //console.log(i + " * " + j + " = " + (i*j));
+        //     }
+        //     //console.log("----------");
+        // }
 
-    // //console.log("----------");
+        // // 2단 짝수만
+        // for (let i = 1; i <= 9; i++) {
+        //     if (i % 2 == 0) {
+        //         //console.log(" 2 " + " * " + i + " = " + (2*i));
+        //     }
+        // } 
 
-    // // 2단 홀수만
-    // for (let i = 1; i <= 9; i++) {
-    //     if (i % 2 == 1) {
-    //         //console.log(" 2 " + " * " + i + " = " + (2*i))
-    //     }
-    // }
-    
-    // //let i = 1;
-    // // while (i <= 3) {
-    // //     console.log("hello"); 
-    // //     i++;
-    // // }
- 
-    // // let i = 1;
-    // // do {
-    // //     console.log("안녕하세요");
-    // //     i++;
-    // // } while (i <= 3)
+        // //console.log("----------");
 
-    // // 별 찍기
-    // let star = "";
-    // // for (let i = 0; i < 5; i++) {
-    // //     for (let j = 1; j <= 1; j++) {
-    // //         star = star + "*";
-    // //     }
-    // //     console.log(star);
-    // // }
-    
-    let star01 = "";
-    for (let i = 0; i < 5; i++) {
-        for (let j = 1; j <= 1; j++) {
-            star01 += "*"; 
+        // // 2단 홀수만
+        // for (let i = 1; i <= 9; i++) {
+        //     if (i % 2 == 1) {
+        //         //console.log(" 2 " + " * " + i + " = " + (2*i))
+        //     }
+        // }
+
+        // //let i = 1;
+        // // while (i <= 3) {
+        // //     console.log("hello"); 
+        // //     i++;
+        // // }
+
+        // // let i = 1;
+        // // do {
+        // //     console.log("안녕하세요");
+        // //     i++;
+        // // } while (i <= 3)
+
+        // // 별 찍기
+        // let star = "";
+        // // for (let i = 0; i < 5; i++) {
+        // //     for (let j = 1; j <= 1; j++) {
+        // //         star = star + "*";
+        // //     }
+        // //     console.log(star);
+        // // }
+
+        let star01 = "";
+        for (let i = 0; i < 5; i++) {
+            for (let j = 1; j <= 1; j++) {
+                star01 += "*";
+            }
+            console.log(star01);
         }
-        console.log(star01);
-    }
 
-    
-    for (let i = 1; i <= 5; i++) {
-        let star02 = "";
-        for (let j = 1; j <= (5-i); j++) { 
-            star02 += " ";
+        for (let i = 1; i <= 5; i++) {
+            let star02 = "";
+            for (let j = 1; j <= (5 - i); j++) {
+                star02 += " ";
+            }
+            for (let k = 1; k <= (i * 2) - 1; k++) {
+                star02 += "*";
+            }
+            console.log(star02);
         }
-        for (let k = 1; k <= (i*2)-1; k++) {
-            star02 += "*";
-        }
-        console.log(star02);
-    }
 
-</script>
-    
+        // 직사각형 별 찍기
+        let star03 = "";
+        for (let i = 0; i < 5; i++) {
+            for (let j = 0; j < 5; j++) {
+                star03 += "*";
+            }
+            star03 += '\n';
+        }
+        console.log(star03);
+
+
+
+
+    </script>
+
 </body>
+
 </html>
