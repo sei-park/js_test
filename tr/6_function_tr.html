@@ -11,34 +11,55 @@
 <body>
 
     <script>
-        function main() {
-            console.log("hello");
-        }
+        // function main() {
+        //     //console.log("hello");
+        // }
 
-        main();
-        //////////////////////////// 
-        function add(num1, num2) {
-            let result = num1 + num2;
-            return result;
-        }
+        // main();
+        // //////////////////////////// 
+        // function add(num1, num2) {
+        //     let result = num1 + num2;
+        //     return result;
+        // }
        
-        let result01 = add(1, 2);
-        console.log(result01);
+        // let result01 = add(1, 2);
+        // //console.log(result01);
         
-        //////////////////////////// 
-        function add01(num) {
-            let result = change(num);
-            return result;
+        // ////////////////////////////
+        // function add01(num) {
+        //     let result = change(num);
+        //     return result;
+        // }
+
+        // function change(num) {
+        //     return num - 10;
+        // }
+
+        // let result02 = add01(20);
+        // console.log(result02);
+        // ////////////////////////////
+
+        // 정수형 변수 두 개 선언
+        // 두 수를 비교하여 큰 수를 return
+        // 출력 : "변수1과 변수2 중 큰 수는 ? 입니다."
+        // 출력도 함수화 
+
+        function number (num1, num2) {
+            if (num1 > num2) {
+                return num1;
+            } else {
+                return num2;
+            }   
         }
 
-        function change(num) {
-            return num - 10;
+        let result = number(10,20);
+
+        function resultPrint() {
+            console.log("num1과 num2 중 큰 수는 " + result + " 입니다.");
         }
-
-        let result02 = add01(20);
-        console.log(result02);
-
-
+        
+        resultPrint();
+        
     </script>
 
 </body>
