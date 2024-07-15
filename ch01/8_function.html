@@ -1,77 +1,153 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
-<script>
-    // 함수 정의
-    function abc () { 
-        //alert("function");
-    }
+    <script>
+        // 함수 정의
+        function abc() {
+            //alert("function");
+        }
 
-    //abc(); // 함수 호출(사용)
-    
-    // 매개변수 = 파라미터 
-    // function abcd (num1, num2) {
-    //     //alert(num1 + num2);
-    // }
-    
-    // abcd(1,2);
+        //abc(); // 함수 호출(사용)
 
-    function add(num1, num2) {
-        let result = num1 + num2;
-        return result; 
-    }
+        // 매개변수 = 파라미터 
+        // function abcd (num1, num2) {
+        //     //alert(num1 + num2);
+        // }
 
-    let result01 = add(20,10);
-    console.log(result01);
+        // abcd(1,2);
 
-    function minus (num1, num2) {
-        let result = num1 - num2; 
-        return result;    
-    }
+        function add(num1, num2) {
+            let result = num1 + num2;
+            return result;
+        }
 
-    let result02 = minus(20,10);
-    console.log(result02);
+        let result01 = add(20, 10);
+        console.log(result01);
 
-    function multiplied (num1, num2) {
-        let result = num1 * num2; 
-        return result;   
-    }
+        function minus(num1, num2) {
+            let result = num1 - num2;
+            return result;
+        }
 
-    let result03 = multiplied(20,10);
-    console.log(result03);
+        let result02 = minus(20, 10);
+        console.log(result02);
 
-    function divided(num1, num2) {
-        let result = num1 / num2; 
-        return result;    
-    }
+        function multiplied(num1, num2) {
+            let result = num1 * num2;
+            return result;
+        }
 
-    let result04 = divided(20,10);
-    console.log(result04);
-    
-    ///////////////////////////////////////////
-    function plus(num1, num2) {
-        let plusResult = change(num1);
-        let result = num1 + num2;
-        return result;
-    }
+        let result03 = multiplied(20, 10);
+        console.log(result03);
 
-    let result05 = plus(20,10); 
-    console.log(result05);
- 
-    function change(num) {
-        return num - 10;
-    }
+        function divided(num1, num2) {
+            let result = num1 / num2;
+            return result;
+        }
+
+        let result04 = divided(20, 10);
+        console.log(result04);
+
+        ///////////////////////////////////////////
+        function plus(num1, num2) {
+            let plusResult = change(num1);
+            let result = num1 + num2;
+            return result;
+        }
+
+        let result05 = plus(20, 10);
+        console.log(result05);
+
+        function change(num) {
+            return num - 10;
+        }
+
+        // 정수형 변수 두 개 선언
+        // 두 수를 비교하여 큰 수를 return
+        // 출력 : "변수1과 변수2 중 큰 수는 ? 입니다."
+        // 출력도 함수화 
+        let num1 = 10;
+        let num2 = 20;
+        function number(num1, num2) {
+            if (num1 > num2) {
+                return num1;
+            } else {
+                return num2;
+            }
+        }
+
+        let result = number(num1, num2);
+
+        function resultPrint() {
+            console.log(num1 + "과 " + num2 + "중 " + "큰 수는 " + result + "입니다.");
+        }
+
+        resultPrint();
+
+        // 정수형 변수 1개 선언
+        // 짝수인지 홀수인지 판단하는 함수 
+        // "? 수는 짝수/홀수 입니다." 출력하는 함수
+        let num = 12;
+        let resultNumber = number01(num);
+        resultPrint01();
+
+        function number01(num) {
+            if (num % 2 == 0) {
+                return "짝수";
+            } else {
+                return "홀수";
+            }
+        }
+
+        function resultPrint01() {
+            if (num == 0) {
+                console.log(num + "은 " + num + "입니다.");
+            } else if (num < 0) {
+                console.log("0보다 작은 수를 넣지 마세요.")
+            } else {
+                console.log(num + " 은(는) " + resultNumber + " 입니다.")
+            }
+
+        }
+
+        //////////////////////////////
+        let int3 = 11;
+        let string = oddEven(int3);
+        display(int3, string);
+
+        function oddEven(num) {
+            let result;
+            if (num % 2 == 0) {
+                result = "짝수";
+            } else {
+                result = "홀수";
+            }
+            return result;
+        }
+
+        function display(num, str) {
+            if (num == 0) {
+                console.log("0은 0입니다.");
+            } else if (num < 0) {
+                console.log("음수를 넣지 마세요.");
+            } else {
+                console.log(num + " 은/는 " + str + " 입니다.");
+            }
+        }
 
 
-    
-</script>
-    
+
+    </script>
+
 </body>
+
 </html>

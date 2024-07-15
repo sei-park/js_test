@@ -39,78 +39,7 @@
         // console.log(result02);
         // ////////////////////////////
 
-        // 정수형 변수 두 개 선언
-        // 두 수를 비교하여 큰 수를 return
-        // 출력 : "변수1과 변수2 중 큰 수는 ? 입니다."
-        // 출력도 함수화 
-        let num1 = 10;
-        let num2 = 20;
-        function number(num1, num2) {
-            if (num1 > num2) {
-                return num1;
-            } else {
-                return num2;
-            }
-        }
-
-        let result = number(num1, num2);
-
-        function resultPrint() {
-            console.log(num1 + "과 " + num2 + "중 " + "큰 수는 " + result + "입니다.");
-        }
-
-        resultPrint();
-
-        // 정수형 변수 1개 선언
-        // 짝수인지 홀수인지 판단하는 함수 
-        // "? 수는 짝수/홀수 입니다." 출력하는 함수
-        let num = 12;
-        function number01(num) {
-            if (num % 2 == 0) {
-                return "짝수";
-            } else {
-                return "홀수";
-            }
-        }
-
-        let resultNumber = number01(num);
-
-        function resultPrint01() {
-            if (num == 0) {
-                console.log(num + "은 " + num + "입니다.");
-            } else if (num < 0) {
-                console.log("0보다 작은 수를 넣지 마세요.")
-            } else {
-                console.log(num + " 은(는) " + resultNumber + " 입니다.")
-            }
-
-        }
-
-        resultPrint01();
-        //////////////////////////////
-        let int3 = 11;
-        let string = oddEven(int3);
-        display(int3, string);
-
-        function oddEven(num) { 
-            let result;
-            if (num % 2 == 0) {
-                result = "짝수";
-            } else {
-                result = "홀수";
-            }
-            return result;
-        }
-
-        function display(num, str) {
-            if (num == 0) {
-                console.log("0은 0입니다.");
-            } else if (num < 0) {
-                console.log("음수를 넣지 마세요.");
-            } else {
-                console.log(num + " 은/는 " + str + " 입니다.");
-            }
-        }
+       
 
 
     </script>
